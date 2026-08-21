@@ -1,0 +1,80 @@
+[
+  {
+    "id": "founded",
+    "year": "2024",
+    "quarter": { "zh": "春", "en": "Spring" },
+    "title": { "zh": "公司成立", "en": "Founded" },
+    "alt": { "zh": "三个人，一张桌子", "en": "Three people, one table" },
+    "body": {
+      "zh": "三个人、一张桌子、一柜子样品。第一条业务线定为简体中文版发行——先把别人的好游戏做对，再谈做自己的。",
+      "en": "Three people, one table and a cabinet of review copies. The first line on the board was Simplified Chinese publishing: get somebody else's good game right first, then earn the right to make our own."
+    },
+    "stats": [{ "label": { "zh": "创始团队", "en": "Founding team" }, "value": { "zh": "3 人", "en": "3 people" } }]
+  },
+  {
+    "id": "first-licence",
+    "year": "2024",
+    "quarter": { "zh": "秋", "en": "Autumn" },
+    "title": { "zh": "首个版权签约", "en": "First licence" },
+    "alt": { "zh": "《阿格莫尼亚》", "en": "Agemonia" },
+    "body": {
+      "zh": "与 Mighty Boards 达成《阿格莫尼亚》简体中文版协议。术语表在译者动笔之前就交回原出版方确认——这条规矩从第一个项目就立下了。",
+      "en": "Simplified Chinese rights to Agemonia agreed with Mighty Boards. The glossary went back to the original publisher for sign-off before a translator started — a rule set on the very first project."
+    },
+    "stats": [{ "label": { "zh": "战役文本", "en": "Campaign text" }, "value": { "zh": "十余万字", "en": "100k+ characters" } }]
+  },
+  {
+    "id": "first-campaign",
+    "year": "2025",
+    "quarter": { "zh": "春", "en": "Spring" },
+    "title": { "zh": "首次众筹", "en": "First campaign" },
+    "alt": { "zh": "中文玩家社群成型", "en": "A community forms" },
+    "body": {
+      "zh": "《阿格莫尼亚》简体中文版众筹完成，中文玩家社群围绕它稳定成型。数字由项目档案自动汇总，不用手改。",
+      "en": "The Agemonia Simplified Chinese edition funded, and a settled Chinese-language community formed around it. The figures below are summed from the project files, never typed in by hand."
+    },
+    "stats": [
+      { "game": "agemonia", "field": "raised" },
+      { "game": "agemonia", "field": "backers" }
+    ]
+  },
+  {
+    "id": "goes-original",
+    "year": "2025",
+    "quarter": { "zh": "夏", "en": "Summer" },
+    "title": { "zh": "原创立项", "en": "Studio goes original" },
+    "alt": { "zh": "《冥烛》", "en": "Netherworld Candle" },
+    "body": {
+      "zh": "《冥烛》进入开发——东方神话盗墓题材，八卦解谜与命运骰系统，十三章战役。机制、叙事、配件工程全部在内部完成。",
+      "en": "Netherworld Candle enters development — an Eastern-mythology tomb adventure built on Bagua puzzles and the Destiny Dice system, across thirteen chapters. Mechanics, narrative and component engineering all in-house."
+    },
+    "stats": [{ "label": { "zh": "战役章节", "en": "Chapters" }, "value": { "zh": "13 章", "en": "13" } }]
+  },
+  {
+    "id": "first-original-ships",
+    "year": "2025",
+    "quarter": { "zh": "冬", "en": "Winter" },
+    "title": { "zh": "原创首发", "en": "First original ships" },
+    "alt": { "zh": "解锁目标全部兑现", "en": "Every stretch goal delivered" },
+    "body": {
+      "zh": "《冥烛》众筹结束，解锁目标全部按期兑现并发货。交付日期一经公布没有改动过一次。",
+      "en": "Netherworld Candle closed its campaign, unlocked every stretch goal and shipped them all on schedule. The published fulfilment date never moved."
+    },
+    "stats": [
+      { "game": "netherworld-candle", "field": "raised" },
+      { "game": "netherworld-candle", "field": "stretch" }
+    ]
+  },
+  {
+    "id": "both-lines",
+    "year": "2026",
+    "quarter": { "zh": "起", "en": "Onward" },
+    "title": { "zh": "两条产线并行", "en": "Both lines running" },
+    "alt": { "zh": "并且开始向外走", "en": "And outward" },
+    "body": {
+      "zh": "原创开发与简体中文版发行同时推进，团队扩到八人，并开始把中国原创作品带向海外发行商。",
+      "en": "Original development and licensed editions now run in parallel, the team is eight, and we have begun taking Chinese originals out to publishers abroad."
+    },
+    "stats": [{ "label": { "zh": "团队规模", "en": "Team" }, "value": { "zh": "8 人", "en": "8 people" } }]
+  }
+]

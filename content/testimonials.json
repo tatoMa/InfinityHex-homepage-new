@@ -1,0 +1,86 @@
+[
+  {
+    "id": "northwind-editions",
+    "sample": true,
+    "quote": {
+      "zh": "我们把简体中文版交出去之前最担心的是术语——一个战役游戏，名词一旦漂移，整条故事线就散了。他们在翻译启动之前先把术语表发回来给我们确认，那一刻我就知道这次不用操心。",
+      "en": "Terminology was what worried us about handing over a Simplified Chinese edition — in a campaign game, once the nouns drift the whole story line comes apart. They sent the glossary back for our sign-off before translation even started. That was the moment I stopped worrying."
+    },
+    "name": { "zh": "Elin Roos", "en": "Elin Roos" },
+    "role": { "zh": "出版总监", "en": "Publishing Director" },
+    "org": { "zh": "Northwind Editions", "en": "Northwind Editions" },
+    "project": { "zh": "剧情战役 · 简体中文版", "en": "Narrative campaign · Simplified Chinese" },
+    "photo": "/people/northwind-editions.svg",
+    "color": "#3D5A80"
+  },
+  {
+    "id": "lantern-press",
+    "sample": true,
+    "quote": {
+      "zh": "他们退回来的打样意见比我们自己厂给的还细，连木质件的色号偏差都标了出来。合作方能把原版规格当底线而不是上限，这在代理里不常见。",
+      "en": "Their prototype notes came back more detailed than our own factory's, down to the stain variance on the wooden components. A licensing partner treating the original spec as a floor rather than a ceiling is not something you see often."
+    },
+    "name": { "zh": "Marco Bellini", "en": "Marco Bellini" },
+    "role": { "zh": "生产负责人", "en": "Head of Production" },
+    "org": { "zh": "Lantern Press", "en": "Lantern Press" },
+    "project": { "zh": "家庭策略 · 配件工艺对齐", "en": "Family strategy · Component match" },
+    "photo": "/people/lantern-press.svg",
+    "color": "#B5842B"
+  },
+  {
+    "id": "orchid-table",
+    "sample": true,
+    "quote": {
+      "zh": "作为设计师，最怕的是自己的规则书被逐句直译成一份说明书。他们重写了它——读起来还是我的游戏，但那是一个中文玩家会一口气读完的版本。",
+      "en": "As a designer, the fear is watching your rulebook translated sentence by sentence into a manual. They rewrote it. It still reads like my game — but it's the version a Chinese-speaking player will finish in one sitting."
+    },
+    "name": { "zh": "Júlia Ferrer", "en": "Júlia Ferrer" },
+    "role": { "zh": "游戏设计师", "en": "Game Designer" },
+    "org": { "zh": "Orchid Table", "en": "Orchid Table" },
+    "project": { "zh": "抽象策略 · 规则书重排", "en": "Abstract strategy · Rulebook rebuild" },
+    "photo": "/people/orchid-table.svg",
+    "color": "#1F6E64"
+  },
+  {
+    "id": "kiln-works",
+    "sample": true,
+    "quote": {
+      "zh": "众筹期间每周一封进度信，延误风险提前两个月告诉我们，而不是等到发货那天。合作到现在，交付日期一次都没有改过。",
+      "en": "A progress letter every week during the campaign, and risks flagged two months out rather than on the day fulfilment was due. In the time we've worked together, a delivery date has never moved."
+    },
+    "name": { "zh": "Dana Whitfield", "en": "Dana Whitfield" },
+    "role": { "zh": "运营总监", "en": "Operations Director" },
+    "org": { "zh": "Kiln Works", "en": "Kiln Works" },
+    "project": { "zh": "众筹操盘 · 履约", "en": "Campaign management · Fulfilment" },
+    "photo": "/people/kiln-works.svg",
+    "color": "#C4623A"
+  },
+  {
+    "id": "paper-tiger",
+    "sample": true,
+    "quote": {
+      "zh": "他们把我们的作品带进中文市场，也把一款中国原创作品带到了我们面前。这种双向的合作方，整个行业里没有几个。",
+      "en": "They took our title into the Chinese market, and then brought a Chinese original to us. There are not many partners in this industry who move in both directions."
+    },
+    "name": { "zh": "Tomás Reyes", "en": "Tomás Reyes" },
+    "role": { "zh": "版权负责人", "en": "Rights Manager" },
+    "org": { "zh": "Paper Tiger Spiele", "en": "Paper Tiger Spiele" },
+    "project": { "zh": "双向版权合作", "en": "Two-way licensing" },
+    "photo": "/people/paper-tiger.svg",
+    "color": "#8E2C3B"
+  },
+  {
+    "id": "meridian-games",
+    "sample": true,
+    "quote": {
+      "zh": "签约之前他们完整跑了十局，然后回来跟我们讨论第 7 章的一个平衡问题——那个问题我们自己也知道。愿意先玩透再谈条件的合作方，值得长期做下去。",
+      "en": "They played ten full games before signing, then came back to discuss a balance issue in chapter seven — one we already knew about. A partner who plays it through before talking terms is one you keep."
+    },
+    "name": { "zh": "Priya Raman", "en": "Priya Raman" },
+    "role": { "zh": "创意总监", "en": "Creative Director" },
+    "org": { "zh": "Meridian Games", "en": "Meridian Games" },
+    "project": { "zh": "选题评估 · 长期合作", "en": "Evaluation · Standing partnership" },
+    "photo": "/people/meridian-games.svg",
+    "color": "#4A7C59"
+  }
+]

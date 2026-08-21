@@ -1,0 +1,407 @@
+/* ============================================================
+   1. TOKENS — 宣纸 Paper · 朱砂 Cinnabar · 黛青 Dai
+   ============================================================ */
+:root{
+  --paper:#F8F3E9; --paper-hi:#FDFAF3; --paper-lo:#EFE7D8; --paper-deep:#E4D9C6;
+  --ink:#16181F; --ink-2:#3A3F4C; --ink-3:#5A6070; --ink-4:#666C7A;
+
+  --cinnabar:#C8352B; --cinnabar-d:#A3271F; --cinnabar-l:#E1594A;
+  --dai:#1F6E64; --dai-l:#2E9186;
+  --gamboge:#D9A441; --gamboge-d:#B5842B; --gamboge-ink:#8A6216;
+  --indigo:#3D5A80; --gold:#B08D4F;
+
+  --r-sm:8px; --r-md:14px; --r-lg:22px; --r-xl:32px;
+  --e-out:cubic-bezier(.16,1,.3,1);
+  --e-spring:cubic-bezier(.34,1.56,.64,1);
+  --e-io:cubic-bezier(.65,0,.35,1);
+
+  --sh-1:0 1px 2px rgba(38,28,14,.06), 0 2px 8px rgba(38,28,14,.05);
+  --sh-2:0 2px 6px rgba(38,28,14,.07), 0 12px 28px -8px rgba(38,28,14,.13);
+  --sh-3:0 4px 12px rgba(38,28,14,.09), 0 28px 60px -14px rgba(38,28,14,.22);
+  --sh-4:0 8px 20px rgba(38,28,14,.10), 0 50px 90px -20px rgba(38,28,14,.30);
+
+  --f-serif:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong",SimSun,serif;
+  --f-sans:"Noto Sans SC","PingFang SC","HarmonyOS Sans SC","Microsoft YaHei",
+           system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --f-en:"Bodoni Moda","Times New Roman",Georgia,serif;
+
+  --gutter:clamp(18px,4.4vw,76px);
+  --maxw:1560px;
+  --hdr-h:66px;
+
+  --mo:1;                   /* motion gate: 1 on, 0.0001 off */
+}
+html[lang="en"]{ --f-serif:"Bodoni Moda",Georgia,"Times New Roman",serif; }
+
+*,*::before,*::after{ box-sizing:border-box; }
+html{ -webkit-text-size-adjust:100%; scroll-behavior:smooth; scroll-padding-top:calc(var(--hdr-h) + 18px); }
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--f-sans); font-size:16px; line-height:1.7;
+  -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  overflow-x:hidden; text-rendering:optimizeLegibility;
+}
+img,svg{ display:block; max-width:100%; }
+button{ font:inherit; color:inherit; }
+a{ color:inherit; text-decoration:none; }
+h1,h2,h3,h4,p{ margin:0; }
+ul,ol{ margin:0; padding:0; list-style:none; }
+
+/* ---------- A11Y primitives ---------- */
+.skip{
+  position:fixed; top:10px; left:10px; z-index:999;
+  transform:translateY(-180%); transition:transform .25s var(--e-out);
+  background:var(--ink); color:var(--paper-hi);
+  padding:12px 20px; border-radius:var(--r-sm); font-weight:700; font-size:14px;
+}
+.skip:focus{ transform:translateY(0); }
+:focus-visible{ outline:2.5px solid var(--cinnabar); outline-offset:3px; border-radius:4px; }
+.vh{
+  position:absolute!important; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0 0 0 0); clip-path:inset(50%); white-space:nowrap;
+}
+
+
+/* ============================================================
+   2. Layout helpers
+   ============================================================ */
+.wrap{ width:100%; max-width:var(--maxw); margin-inline:auto; padding-inline:var(--gutter); }
+.eyebrow{
+  display:inline-flex; align-items:center; gap:10px;
+  font-size:11.5px; font-weight:700; letter-spacing:.22em; text-transform:uppercase;
+  color:var(--ink-3);
+}
+.eyebrow .hx{
+  width:7px; height:8px; background:var(--cinnabar); flex:none;
+  clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);
+}
+.sec-title{
+  font-family:var(--f-serif); font-weight:900;
+  font-size:clamp(29px,4.2vw,58px); line-height:1.18; letter-spacing:.01em;
+  max-width:15em; text-wrap:balance;
+}
+.sec-title .alt{
+  display:block; font-family:var(--f-en); font-style:italic; font-weight:500;
+  font-size:.42em; letter-spacing:.02em; color:var(--ink-3); margin-top:.5em;
+}
+.sec{ position:relative; padding:clamp(78px,9vw,138px) 0; }
+/* NOTE: `content-visibility:auto` was tried here and removed. Its
+   contain-intrinsic-size is a guess, so every section that scrolled into
+   view for the first time resized the document and shifted everything below
+   it — anchors drifted and the scroll bar jumped. The measured win was small
+   next to the canvas fix; correctness wins. */
+.sec-head{
+  display:grid; grid-template-columns:minmax(0,1fr) minmax(0,.68fr);
+  gap:clamp(18px,4vw,64px); align-items:end; margin-bottom:clamp(34px,4.6vw,62px);
+}
+.sec-head p{ color:var(--ink-2); font-size:15.5px; max-width:50ch; }
+/* below a laptop there is not enough width for a heading and a lead side by
+   side — they were squeezing each other into two-word lines */
+@media (max-width:900px){
+  .sec-head{ grid-template-columns:minmax(0,1fr); gap:14px; align-items:start; }
+  .sec-head p{ max-width:60ch; }
+}
+
+.reveal{ opacity:0; transform:translate3d(0,38px,0);
+  transition:opacity .9s var(--e-out), transform 1s var(--e-out); }
+.reveal.in{ opacity:1; transform:none; }
+.reveal[data-d="1"]{ transition-delay:.08s }
+.reveal[data-d="2"]{ transition-delay:.16s }
+.reveal[data-d="3"]{ transition-delay:.24s }
+.reveal[data-d="4"]{ transition-delay:.32s }
+.reveal[data-d="5"]{ transition-delay:.40s }
+
+/* ============================================================
+   3. Buttons
+   ============================================================ */
+.btn{
+  position:relative; display:inline-flex; align-items:center; gap:10px;
+  padding:14px 26px; border-radius:99px; font-size:15px; font-weight:700;
+  border:1px solid transparent; cursor:pointer; overflow:hidden;
+  transition:transform .5s var(--e-spring), box-shadow .45s var(--e-out),
+             color .35s, background .35s, border-color .35s;
+}
+.btn>span{ position:relative; z-index:2; display:inline-flex; align-items:center; gap:10px; }
+.btn-p{ background:var(--cinnabar); color:#FFF6F0; box-shadow:0 6px 18px -6px rgba(200,53,43,.6); }
+.btn-p::before{
+  content:""; position:absolute; z-index:1; left:var(--mx,50%); top:var(--my,50%);
+  width:0; height:0; border-radius:50%; background:var(--cinnabar-d);
+  transform:translate(-50%,-50%); transition:width .6s var(--e-out), height .6s var(--e-out);
+}
+.btn-p:hover::before{ width:340px; height:340px; }
+.btn-p:hover{ box-shadow:0 14px 34px -8px rgba(200,53,43,.55); }
+.btn-g{ background:transparent; color:var(--ink); border-color:rgba(22,24,31,.2); }
+.btn-g:hover{ border-color:var(--ink); background:rgba(22,24,31,.04); }
+.btn-sm{ padding:10px 18px; font-size:14px; }
+.btn .arw{ transition:transform .45s var(--e-spring); }
+.btn:hover .arw{ transform:translateX(4px); }
+.on-dark .btn-g{ color:var(--paper-hi); border-color:rgba(248,243,233,.3); }
+.on-dark .btn-g:hover{ background:rgba(248,243,233,.1); border-color:var(--paper-hi); }
+
+.ph-chip{
+  display:inline-flex; align-items:center; gap:7px;
+  padding:4px 11px; border-radius:99px; font-size:10.5px; font-weight:700;
+  letter-spacing:.14em; text-transform:uppercase;
+  color:var(--gamboge-ink); background:rgba(217,164,65,.16);
+  border:1px dashed rgba(181,132,43,.5);
+}
+
+/* ============================================================
+   4. Header / nav / mobile menu / locale switch
+   ============================================================ */
+.hdr{
+  position:fixed; inset:0 0 auto 0; z-index:50;
+  min-height:var(--hdr-h);
+  padding:12px var(--gutter);
+  display:flex; align-items:center; gap:clamp(8px,1.6vw,26px);
+  transition:padding .5s var(--e-out);
+}
+.hdr::before{
+  content:""; position:absolute; inset:0; z-index:-1;
+  background:var(--paper); border-bottom:1px solid rgba(22,24,31,.10);
+  opacity:0; transition:opacity .45s var(--e-out);
+}
+.hdr.stuck::before{ opacity:1 }
+
+/* brand takes the auto margin, so the action cluster is ALWAYS hard right —
+   including on phones where the nav is hidden. */
+.brand{ display:flex; align-items:center; gap:11px; flex:none; margin-right:auto; min-width:0; }
+.brand-mark{ width:40px; height:40px; flex:none; transition:transform .7s var(--e-spring); }
+.brand:hover .brand-mark{ transform:rotate(calc(30deg * var(--mo))); }
+.brand-txt{ display:flex; flex-direction:column; line-height:1.06; min-width:0; }
+.brand-cn{ font-family:var(--f-serif); font-weight:900; font-size:18px; letter-spacing:.05em; white-space:nowrap; }
+.brand-en{
+  font-family:var(--f-sans); font-size:9px; font-weight:600; letter-spacing:.2em;
+  text-transform:uppercase; color:var(--ink-3); white-space:nowrap;
+}
+
+.nav{ display:flex; align-items:center; gap:2px; }
+.nav a{
+  position:relative; padding:9px 14px; font-size:14.5px; font-weight:500;
+  color:var(--ink-2); border-radius:99px; transition:color .3s var(--e-out); white-space:nowrap;
+}
+.nav a::before{
+  content:""; position:absolute; inset:0; border-radius:99px; background:var(--paper-lo);
+  transform:scale(.7); opacity:0; z-index:-1;
+  transition:transform .45s var(--e-spring), opacity .3s;
+}
+.nav a:hover{ color:var(--ink); }
+.nav a:hover::before{ transform:scale(1); opacity:1; }
+
+.hdr-act{ display:flex; align-items:center; gap:8px; flex:none; }
+
+.icon-btn{
+  width:40px; height:40px; display:grid; place-items:center; flex:none;
+  border:1px solid rgba(22,24,31,.14); background:transparent;
+  border-radius:12px; cursor:pointer; color:var(--ink-2);
+  transition:background .35s var(--e-out), border-color .35s var(--e-out), color .3s;
+}
+.icon-btn:hover{ background:var(--paper-lo); border-color:rgba(22,24,31,.26); color:var(--ink); }
+
+/* language switch — a two-sided token you flip */
+.lang{
+  display:inline-flex; align-items:center; height:40px; padding:3px; flex:none;
+  border:1px solid rgba(22,24,31,.14); border-radius:12px; background:transparent;
+  cursor:pointer; position:relative; overflow:hidden;
+  transition:border-color .35s var(--e-out);
+}
+.lang:hover{ border-color:rgba(22,24,31,.3); }
+.lang i{
+  position:relative; z-index:1;
+  display:grid; place-items:center; width:32px; height:32px; border-radius:9px;
+  font-style:normal; font-size:12.5px; font-weight:700; letter-spacing:.02em;
+  color:var(--ink-4); transition:color .4s var(--e-out);
+}
+.lang i.on{ color:#FFF6F0; }
+.lang .knob{
+  position:absolute; top:3px; left:3px; width:32px; height:32px; border-radius:9px;
+  background:var(--cinnabar);
+  transition:transform .5s var(--e-spring);
+}
+.lang[data-l="en"] .knob{ transform:translateX(32px); }
+
+.burger{ display:none; position:relative; }
+.burger i{
+  position:absolute; left:50%; top:50%;
+  width:19px; height:2px; margin:-1px 0 0 -9.5px;
+  background:var(--ink); border-radius:2px;
+  transition:transform .42s var(--e-out), opacity .18s linear;
+}
+.burger i:nth-child(1){ transform:translateY(-6px) }
+.burger i:nth-child(2){ transform:translateY(0) }
+.burger i:nth-child(3){ transform:translateY(6px) }
+.burger[aria-expanded="true"] i:nth-child(1){ transform:translateY(0) rotate(45deg) }
+.burger[aria-expanded="true"] i:nth-child(2){ opacity:0; transform:scaleX(.15) }
+.burger[aria-expanded="true"] i:nth-child(3){ transform:translateY(0) rotate(-45deg) }
+
+.mmenu{
+  position:fixed; inset:0; z-index:49; background:var(--paper);
+  padding:calc(var(--hdr-h) + 26px) var(--gutter) 40px;
+  transform:translateY(-101%); transition:transform .6s var(--e-out);
+  display:flex; flex-direction:column; gap:2px; visibility:hidden;
+  overflow-y:auto; overscroll-behavior:contain;
+}
+.mmenu.open{ transform:none; visibility:visible; }
+.mmenu a{
+  font-family:var(--f-serif); font-size:clamp(24px,7vw,32px); font-weight:700;
+  padding:14px 0; border-bottom:1px solid rgba(22,24,31,.08);
+  display:flex; align-items:baseline; gap:12px;
+}
+.mmenu a .alt{ font-family:var(--f-en); font-style:italic; font-size:13px;
+  color:var(--ink-4); font-weight:500; }
+.mmenu .m-foot{ margin-top:auto; padding-top:28px; display:flex; gap:10px; flex-wrap:wrap; }
+
+/* six nav items plus a CTA is a lot of bar; tighten before it wraps */
+@media (max-width:1400px){
+  .nav a{ padding:9px 11px; font-size:14px; }
+}
+@media (max-width:1200px){
+  .nav a{ padding:8px 9px; font-size:13.5px; }
+  .hdr{ gap:8px; }
+}
+@media (max-width:1080px){
+  .nav{ display:none; }
+  .burger{ display:block; }
+  .hdr-act .btn{ display:none; }
+}
+@media (max-width:420px){
+  .brand-mark{ width:34px; height:34px; }
+  .brand-cn{ font-size:16px; }
+  .brand-en{ font-size:8px; letter-spacing:.16em; }
+  .icon-btn,.lang{ height:38px; }
+  .icon-btn{ width:38px; }
+  .hdr-act{ gap:6px; }
+}
+/* 320px-class phones: the English wordmark plus the language token plus the
+   burger is more than the bar can hold, so the wordmark gives way first —
+   the action cluster must never be pushed off the right edge. */
+@media (max-width:380px){
+  .brand{ overflow:hidden; }
+  .brand-txt{ min-width:0; }
+  .brand-cn{ font-size:15px; overflow:hidden; text-overflow:ellipsis; }
+  .brand-en{ display:none; }
+  .lang i,.lang .knob{ width:28px; }
+  .lang[data-l="en"] .knob{ transform:translateX(28px); }
+}
+@media (max-width:330px){
+  .brand-txt{ display:none; }
+}
+
+/* ============================================================
+   5. Cookie consent
+   ============================================================ */
+.cc-scrim{
+  position:fixed; inset:0; z-index:78; background:rgba(20,16,10,.36);
+  opacity:0; transition:opacity .4s var(--e-out);
+}
+.cc-scrim.show{ opacity:1; }
+.cc{
+  position:fixed; z-index:80; left:50%; bottom:max(16px,env(safe-area-inset-bottom));
+  width:min(760px, calc(100vw - 24px)); transform:translate(-50%, 130%);
+  background:var(--paper-hi); border:1px solid rgba(22,24,31,.12);
+  border-radius:var(--r-lg); box-shadow:var(--sh-4);
+  padding:clamp(20px,2.6vw,30px);
+  transition:transform .7s var(--e-out);
+  max-height:min(86svh, 760px); overflow:auto; overscroll-behavior:contain;
+}
+.cc.show{ transform:translate(-50%,0); }
+.cc h2{ font-family:var(--f-serif); font-size:clamp(19px,2vw,23px); font-weight:900; }
+.cc > p{ color:var(--ink-2); font-size:14px; margin-top:9px; max-width:62ch; }
+.cc .gpc{
+  margin-top:12px; padding:10px 13px; border-radius:var(--r-sm);
+  background:rgba(31,110,100,.09); border:1px solid rgba(31,110,100,.24);
+  color:#155248; font-size:13px;
+}
+.cc-acts{ display:flex; flex-wrap:wrap; gap:10px; margin-top:20px; }
+.cc-acts .btn{ flex:1 1 auto; justify-content:center; min-width:150px; }
+.cc-link{
+  background:none; border:0; padding:0; cursor:pointer; font-size:13px;
+  color:var(--ink-3); text-decoration:underline; text-underline-offset:3px;
+}
+.cc-cats{ margin-top:18px; display:grid; gap:10px; }
+.cc-cat{
+  display:grid; grid-template-columns:1fr auto; gap:10px 16px; align-items:start;
+  padding:14px 16px; border:1px solid rgba(22,24,31,.1); border-radius:var(--r-md);
+  background:var(--paper);
+}
+.cc-cat b{ font-size:14.5px; }
+.cc-cat p{ color:var(--ink-3); font-size:13px; margin-top:4px; }
+.cc-cat .always{ font-size:11.5px; color:var(--dai); font-weight:700; letter-spacing:.08em; }
+.sw{ position:relative; width:46px; height:26px; flex:none; }
+.sw input{ position:absolute; inset:0; opacity:0; width:100%; height:100%; margin:0; cursor:pointer; }
+.sw span{
+  position:absolute; inset:0; border-radius:99px; background:rgba(22,24,31,.2);
+  transition:background .35s var(--e-out); pointer-events:none;
+}
+.sw span::after{
+  content:""; position:absolute; top:3px; left:3px; width:20px; height:20px;
+  border-radius:50%; background:#fff; box-shadow:0 1px 3px rgba(0,0,0,.3);
+  transition:transform .4s var(--e-spring);
+}
+.sw input:checked + span{ background:var(--dai); }
+.sw input:checked + span::after{ transform:translateX(20px); }
+.sw input:focus-visible + span{ outline:2.5px solid var(--cinnabar); outline-offset:3px; }
+@media (max-width:520px){ .cc-acts .btn{ min-width:0; flex-basis:100%; } }
+
+/* ============================================================
+   6. Footer
+   ============================================================ */
+.ftr{ padding:clamp(54px,6vw,86px) 0 36px; border-top:1px solid rgba(22,24,31,.1);
+  background:var(--paper-hi); position:relative; z-index:2; }
+.ftr-grid{ display:grid; grid-template-columns:minmax(0,1.5fr) repeat(3,minmax(0,1fr));
+  gap:clamp(24px,3vw,48px); }
+.ftr h4{ font-size:11.5px; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-4);
+  margin-bottom:14px; font-weight:700; }
+.ftr li a, .ftr li button{ display:block; padding:5px 0; font-size:14.5px; color:var(--ink-2);
+  background:none; border:0; text-align:left; cursor:pointer;
+  transition:color .3s, transform .4s var(--e-out); }
+.ftr li a:hover, .ftr li button:hover{ color:var(--cinnabar); transform:translateX(4px); }
+.ftr-social{ display:flex; gap:8px; margin-top:18px; }
+.ftr-social a{
+  width:38px; height:38px; display:grid; place-items:center; border-radius:11px;
+  border:1px solid rgba(22,24,31,.12); color:var(--ink-3);
+  transition:.35s var(--e-out);
+}
+.ftr-social a:hover{ color:var(--cinnabar); border-color:var(--cinnabar); transform:translateY(-3px); }
+.ftr-bot{ display:flex; flex-wrap:wrap; gap:12px; justify-content:space-between;
+  margin-top:clamp(34px,4vw,56px); padding-top:22px;
+  border-top:1px solid rgba(22,24,31,.09); font-size:12.5px; color:var(--ink-4); }
+@media (max-width:820px){ .ftr-grid{ grid-template-columns:1fr 1fr; } }
+@media (max-width:480px){ .ftr-grid{ grid-template-columns:1fr; } }
+
+/* ============================================================
+   7. Reduced motion — media query AND the in-page toggle
+   ============================================================ */
+@media (prefers-reduced-motion:reduce){
+  :root{ --mo:0.0001; }
+  html{ scroll-behavior:auto; }
+}
+body.no-mo{ --mo:0.0001; }
+body.no-mo *, body.no-mo *::before, body.no-mo *::after{
+  animation-duration:.001ms!important; animation-iteration-count:1!important;
+  transition-duration:.001ms!important; scroll-behavior:auto!important;
+}
+body.no-mo body.no-mo .wall-stage{ transform:none!important; }
+body.no-mo .px-layer{ transform:none!important }
+body.no-mo .process-steps li{ opacity:1!important }
+body.no-mo .process-steps p{ max-height:12em!important; opacity:1!important }
+body.no-mo .wrow{ animation:none!important; transform:none!important; }
+body.no-mo .wall-view{ overflow-x:auto; }
+body.no-mo .seam-tile{ transform:none!important; opacity:1!important }
+body.no-mo .seam-piece{ transform:translateY(-6%) scale(1)!important; opacity:.9!important }
+body.no-mo .dicerail{ display:none; }
+
+/* A white or single-colour logo would disappear against the paper header —
+   BRAND.logoPlate seats it on the cinnabar hexagon instead. */
+.brand-mark{ object-fit:contain; }
+.brand-mark.plated{
+  background:linear-gradient(135deg,var(--cinnabar-l),var(--cinnabar-d));
+  clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);
+  padding:18%;
+}
+
+/* ---------- tap targets ----------
+   Inline text links that live on their own line (the cookie policy link, a
+   team member's email) get vertical padding so the touch area clears 24px
+   without changing how they read. */
+.cc-link, .tmail{ display:inline-block; padding-block:5px; }

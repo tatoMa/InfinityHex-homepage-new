@@ -1,0 +1,133 @@
+[
+  {
+    "id": "andy",
+    "name": { "zh": "Andy", "en": "Andy" },
+    "role": { "zh": "创始人 / CEO", "en": "Founder / CEO" },
+    "bio": {
+      "zh": "签下第一份版权协议之前，先把那盒游戏在自家桌上跑了十四局。现在负责选题、版权谈判与整体产品判断——公司里唯一一件他不肯授权出去的事，是决定我们做什么、不做什么。",
+      "en": "Played the first title fourteen times on his own table before signing anything. Runs acquisition, licence negotiation and overall product judgement — the one call he will not delegate is what we take on and what we turn down."
+    },
+    "focus": {
+      "zh": ["版权洽谈", "选题", "发行策略"],
+      "en": ["Licensing", "Acquisition", "Publishing strategy"]
+    },
+    "photo": "/people/andy.svg",
+    "color": "#C8352B",
+    "email": "andy@infinityhex.com",
+    "since": 2024,
+    "lead": true
+  },
+  {
+    "id": "shen-yi",
+    "name": { "zh": "沈弈", "en": "Shen Yi" },
+    "role": { "zh": "本地化总监", "en": "Head of Localisation" },
+    "bio": {
+      "zh": "术语表在译者动笔之前就要定稿——这条规矩是她立的。带队完成《阿格莫尼亚》十余万字战役文本的中文改写，坚持规则书按中文玩家的阅读顺序重排，而不是照抄原书版式。",
+      "en": "The rule that the glossary is locked before a translator starts is hers. Led the Chinese rewrite of Agemonia's campaign text and insists rulebooks are re-sequenced for how Chinese players actually read, not copied page for page."
+    },
+    "focus": {
+      "zh": ["术语体系", "规则书重排", "试玩校对"],
+      "en": ["Terminology", "Rulebook editing", "Played proofing"]
+    },
+    "photo": "/people/shen-yi.svg",
+    "color": "#1F6E64",
+    "since": 2024
+  },
+  {
+    "id": "lu-heng",
+    "name": { "zh": "陆恒", "en": "Lu Heng" },
+    "role": { "zh": "生产总监", "en": "Head of Production" },
+    "bio": {
+      "zh": "十年印制与配件工程背景。白盒打样、卡牌覆膜、木质件色号、外盒抗压，全部经他手过一遍；他的口头禅是「原版规格是底线，不是上限」。",
+      "en": "Ten years in print and component engineering. White-box prototypes, card lamination, wood stain matching and box crush tests all cross his desk. His line: the original spec is the floor, not the ceiling."
+    },
+    "focus": {
+      "zh": ["打样", "配件工程", "工厂管理"],
+      "en": ["Prototyping", "Component engineering", "Factory management"]
+    },
+    "photo": "/people/lu-heng.svg",
+    "color": "#B5842B",
+    "since": 2024
+  },
+  {
+    "id": "mei-qing",
+    "name": { "zh": "梅晴", "en": "Mei Qing" },
+    "role": { "zh": "首席设计师", "en": "Lead Game Designer" },
+    "bio": {
+      "zh": "《冥烛》的机制作者。命运骰系统与八卦解谜都出自她的原型；她认为一个机制如果需要三段话才能讲清楚，那就是还没设计完。",
+      "en": "Designer of Netherworld Candle. Both the Destiny Dice system and the Bagua puzzles started as her prototypes. Her test: if a mechanism needs three paragraphs to explain, it isn't finished."
+    },
+    "focus": {
+      "zh": ["机制设计", "战役结构", "原型迭代"],
+      "en": ["Systems design", "Campaign structure", "Prototyping"]
+    },
+    "photo": "/people/mei-qing.svg",
+    "color": "#8E2C3B",
+    "since": 2025
+  },
+  {
+    "id": "tang-yu",
+    "name": { "zh": "唐羽", "en": "Tang Yu" },
+    "role": { "zh": "艺术总监", "en": "Art Director" },
+    "bio": {
+      "zh": "负责原创作品的视觉体系与中文版的美术落地。她的工作里最难的一部分不是画,是让一套为拉丁字母设计的版式在中文排布下依然成立。",
+      "en": "Owns the visual system on originals and the art adaptation on licensed editions. The hard part of the job is not illustration — it is making a layout designed around Latin type still work set in Chinese."
+    },
+    "focus": {
+      "zh": ["视觉体系", "版式适配", "印前色彩"],
+      "en": ["Visual systems", "Layout adaptation", "Pre-press colour"]
+    },
+    "photo": "/people/tang-yu.svg",
+    "color": "#3D5A80",
+    "since": 2025
+  },
+  {
+    "id": "zhou-mo",
+    "name": { "zh": "周墨", "en": "Zhou Mo" },
+    "role": { "zh": "众筹与渠道负责人", "en": "Head of Campaigns & Retail" },
+    "bio": {
+      "zh": "两次自营众筹的操盘人,53 个解锁目标全部按期兑现。同时负责实体渠道与经销商关系——他坚持交付日期一旦公布就不再改动。",
+      "en": "Ran both self-managed campaigns and delivered all 53 stretch goals on schedule. Also owns retail and distribution accounts. His rule: once a fulfilment date is published, it does not move."
+    },
+    "focus": {
+      "zh": ["众筹运营", "渠道与经销", "履约"],
+      "en": ["Crowdfunding", "Retail & distribution", "Fulfilment"]
+    },
+    "photo": "/people/zhou-mo.svg",
+    "color": "#4A7C59",
+    "since": 2024
+  },
+  {
+    "id": "an-ni",
+    "name": { "zh": "安妮", "en": "Annie Xu" },
+    "role": { "zh": "版权与合作经理", "en": "Rights & Partnerships Manager" },
+    "bio": {
+      "zh": "海外发行商的第一联络人。合同、授权范围、样书与展会日程都由她跟进——工作日 48 小时内回复的承诺,是她在兑现。",
+      "en": "First point of contact for publishers abroad. Contracts, territory scope, review copies and convention scheduling all run through her — the 48-hour reply promise is hers to keep."
+    },
+    "focus": {
+      "zh": ["版权合同", "展会", "发行商关系"],
+      "en": ["Contracts", "Conventions", "Publisher relations"]
+    },
+    "photo": "/people/an-ni.svg",
+    "color": "#6A4C93",
+    "email": "partnerships@infinityhex.com",
+    "since": 2025
+  },
+  {
+    "id": "gao-lin",
+    "name": { "zh": "高林", "en": "Gao Lin" },
+    "role": { "zh": "社群与试玩负责人", "en": "Community & Playtest Lead" },
+    "bio": {
+      "zh": "组织线下试玩会与三轮真人校对。每年两百多款候选里,哪几款「跑完十局还想再来一局」,数据来自他的场子。",
+      "en": "Runs the demo nights and the three rounds of played proofing. Of the two hundred-odd candidates a year, the data on which ones survive ten plays and still get asked for comes from his tables."
+    },
+    "focus": {
+      "zh": ["试玩组织", "玩家社群", "勘误跟进"],
+      "en": ["Playtesting", "Community", "Errata"]
+    },
+    "photo": "/people/gao-lin.svg",
+    "color": "#C4623A",
+    "since": 2025
+  }
+]

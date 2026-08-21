@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Mighty Boards",
+    "url": "https://mighty-boards.com/",
+    "since": 2024
+  },
+  {
+    "name": {
+      "zh": "摩点 Modian",
+      "en": "Modian"
+    },
+    "sample": true
+  },
+  {
+    "name": "Studio Placeholder",
+    "sample": true
+  },
+  {
+    "name": "Northwind Editions",
+    "sample": true
+  },
+  {
+    "name": "Lantern Press",
+    "sample": true
+  },
+  {
+    "name": "Kiln Works",
+    "sample": true
+  },
+  {
+    "name": "Meridian Games",
+    "sample": true
+  },
+  {
+    "name": "Blue Heron",
+    "sample": true
+  },
+  {
+    "name": "Paper Tiger",
+    "sample": true
+  },
+  {
+    "name": "Orchid Table",
+    "sample": true
+  }
+]
