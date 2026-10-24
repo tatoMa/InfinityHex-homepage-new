@@ -21,7 +21,7 @@ funding:
     zh: 摩点
     en: Modian
 cover:
-  en: /games/agemonia/cover.jpg
+  en: /games/agemonia/catalogue-cover.jpg
 title:
   zh: 阿格莫尼亚
   en: Agemonia
@@ -33,30 +33,44 @@ tags:
   en: [Chinese edition, Campaign, Co-op]
 ---
 
-由 Mighty Boards 出品的大型剧情战役游戏，向量桌游负责简体中文版的引进、翻译与发行。
+《阿格莫尼亚》是由 Mighty Boards 出品的大型合作剧情战役游戏，也是向量桌游引进的简体中文本地化项目之一。我们负责中文版的引进、翻译与发行，让中文玩家能够以熟悉的语言走进这场冒险。
 
-这是一款把「叙事」真正做进机制里的作品：每一章都有大量分支文本，角色的行动点如何分配、和谁说话、先救谁，都会写进后续章节的剧本。中文版在规则书之外重写了全部剧情文本，术语表在翻译启动前先行统一，确保十几万字的战役读起来是一部小说，而不是一份说明书。
+### 一起走进奇幻战役
 
-### 中文版做了什么
+游戏将战术情景、探索、角色成长与分支叙事结合在一起。玩家在合作中推进冒险，让战场上的行动与故事中的选择共同构成自己的旅程。
 
-- 全部剧情文本按小说标准重写，而非逐句直译
-- 术语表先行统一，跨章节名词零漂移
-- 三轮完整试玩校对，规则书按中文玩家的阅读习惯重排
-- 配件与卡牌工艺对齐原版规格
+### 让故事与规则都清晰传达
 
-众筹于摩点平台完成，最终募集 ¥2,118,705.50，共 1,173 位支持者，中文玩家社群已经稳定成型。
+剧情游戏的中文化，既要保留原作的世界观与叙事风格，也要让玩家准确理解规则。我们的工作围绕规则、卡牌与剧情文本展开，注重术语一致、表达自然，以及不同组件之间的信息对应。
+
+我们尊重原作的内容与设计意图，让中文表达服务于理解与沉浸体验。
+
+### 中文版众筹
+
+《阿格莫尼亚》简体中文版在摩点完成众筹，募集人民币 2,118,705.50 元，获得 1,173 位支持者支持。
+
+### 游戏展示
+
+![阿格莫尼亚游戏组件与桌面展示](/games/agemonia/catalogue-components.jpg)
 
 <!-- @en -->
 
-A large-scale narrative campaign game from Mighty Boards. Infinity Hex Games handled licensing, translation and publishing for the Simplified Chinese edition.
+*Agemonia* is a large-scale cooperative narrative campaign game from Mighty Boards and one of the titles brought to the Simplified Chinese market by Infinity Hex Games. We handled licensing, translation and publishing for the Chinese edition, making the adventure accessible to Chinese-speaking players.
 
-This is a design that puts storytelling *inside* the mechanics: every chapter carries a large body of branching text, and how you spend action points, who you talk to, who you save first all get written into the script of later chapters. For the Chinese edition the entire narrative text was rewritten rather than translated line by line, with the glossary locked before translation began — so that a campaign of well over a hundred thousand characters reads like a novel instead of a manual.
+### A shared fantasy campaign
 
-### What the Chinese edition involved
+Agemonia brings tactical scenarios, exploration, character development and branching narrative into one cooperative adventure. Players advance through the campaign together, shaping their journey through decisions in both battle and story.
 
-- All narrative text rewritten to novel standard, not translated sentence by sentence
-- Glossary unified up front — zero terminology drift across chapters
-- Three full rounds of played proofing; rulebook re-laid-out for Chinese reading habits
-- Components and card stock matched to the original specification
+### Clarity in both story and rules
 
-Crowdfunded on Modian, closing at ¥2,118,705.50 from 1,173 backers, with a settled Chinese-language player community around it.
+Localising a narrative game means preserving its world and storytelling while making its rules clear to players. Our work spans the rulebook, cards and narrative text, with attention to consistent terminology, natural language and matching information across components.
+
+We respect the original content and design intent, shaping the Chinese prose to support understanding and immersion.
+
+### Chinese-edition crowdfunding
+
+The Simplified Chinese edition of *Agemonia* raised CNY 2,118,705.50 on Modian with the support of 1,173 backers.
+
+### Game gallery
+
+![Agemonia components and tabletop display](/games/agemonia/catalogue-components.jpg)

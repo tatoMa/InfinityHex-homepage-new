@@ -61,7 +61,7 @@
 .hero-kicker .txt{ text-wrap:balance; min-width:0 }
 /* narrow phones: the delivery chip and the business line stack rather than
    pushing each other off the screen */
-@media (max-width:430px){
+@media (max-width:530px){
   .hero-kicker{
     flex-wrap:wrap; gap:7px; padding:8px 13px; border-radius:16px;
     font-size:11.5px; letter-spacing:.02em;

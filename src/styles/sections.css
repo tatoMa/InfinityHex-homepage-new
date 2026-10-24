@@ -1338,6 +1338,12 @@ body.no-mo .hist-wash, body.no-mo .hist-mesh{ transform:none!important }
 .tface img{ width:100%; height:100%; object-fit:cover;
   transition:transform 1.1s var(--e-out) }
 .tcard:hover .tface img{ transform:scale(1.04) }
+.tface-placeholder{
+  position:absolute; inset:0; display:flex; flex-direction:column;
+  align-items:center; justify-content:center; gap:12px; color:var(--paper-hi);
+}
+.tface-placeholder > span{ font-family:var(--f-en); font-size:clamp(72px,9vw,112px); line-height:1 }
+.tface-placeholder small{ font-size:12px; letter-spacing:.08em }
 .tface::after{
   content:""; position:absolute; inset:0; pointer-events:none;
   background:linear-gradient(165deg, rgba(255,255,255,.14), transparent 44%);
@@ -1362,6 +1368,18 @@ body.no-mo .hist-wash, body.no-mo .hist-mesh{ transform:none!important }
 .tmeta b{ font-family:var(--f-en); font-weight:600; color:var(--ink-2) }
 .tmail{ color:var(--cinnabar); text-decoration:underline; text-underline-offset:3px;
   overflow:hidden; text-overflow:ellipsis }
+
+.event-gallery{ columns:2; column-gap:clamp(16px,2.4vw,32px) }
+.event-photo{
+  break-inside:avoid; margin:0 0 clamp(16px,2.4vw,32px); overflow:hidden;
+  background:var(--paper-hi); border:1px solid rgba(22,24,31,.09);
+  border-radius:var(--r-lg); box-shadow:var(--sh-1);
+}
+.event-photo a{ display:block }
+.event-photo a:focus-visible{ outline:3px solid var(--cinnabar); outline-offset:-3px }
+.event-photo img{ display:block; width:100%; height:auto }
+.event-photo figcaption{ padding:14px 18px; color:var(--ink-2); font-size:14px; line-height:1.6 }
+@media (max-width:640px){ .event-gallery{ columns:1 } }
 
 /* the founder's card runs the full width of the grid on a wide screen */
 @media (min-width:900px){

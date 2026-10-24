@@ -1,46 +1,49 @@
 [
   {
-    "name": "Mighty Boards",
-    "url": "https://mighty-boards.com/",
-    "since": 2024
+    "name": "WINGO",
+    "url": "https://wingogames.com/",
+    "logo": "/partners/wingo.png"
   },
   {
-    "name": {
-      "zh": "摩点 Modian",
-      "en": "Modian"
-    },
-    "sample": true
+    "name": "Top Games",
+    "logo": "/partners/top-games.png"
   },
   {
-    "name": "Studio Placeholder",
-    "sample": true
+    "name": "LONGPACK",
+    "url": "https://www.longpackgames.com/",
+    "logo": "/partners/longpack.png"
   },
   {
-    "name": "Northwind Editions",
-    "sample": true
+    "name": "PANDA",
+    "url": "https://pandagm.com/",
+    "logo": "/partners/panda.png"
   },
   {
-    "name": "Lantern Press",
-    "sample": true
+    "name": "NEXT",
+    "logo": "/partners/next.png"
   },
   {
-    "name": "Kiln Works",
-    "sample": true
+    "name": "Lautapelit.fi",
+    "logo": "/partners/lautapelit.png"
   },
   {
-    "name": "Meridian Games",
-    "sample": true
+    "name": "TSG",
+    "logo": "/partners/tsg.png"
   },
   {
-    "name": "Blue Heron",
-    "sample": true
+    "name": "PTS",
+    "logo": "/partners/pts.png"
   },
   {
-    "name": "Paper Tiger",
-    "sample": true
+    "name": "AEG / AEGIS",
+    "logo": "/partners/aeg-aegis.png"
   },
   {
-    "name": "Orchid Table",
-    "sample": true
+    "name": "M.O.B",
+    "logo": "/partners/mob.png"
+  },
+  {
+    "name": "All About Games",
+    "logo": "/partners/all-about-games.png"
   }
 ]

@@ -4,10 +4,10 @@ order: 1
 kind: original
 status: shipping
 color: "#8E2C3B"
-year: 2025
+year: 2024
 designer:
-  zh: 向量桌游工作室
-  en: Infinity Hex Studio
+  zh: Andy Eyre
+  en: Andy Eyre
 publisher:
   zh: 向量桌游
   en: Infinity Hex Games
@@ -24,45 +24,61 @@ funding:
     zh: 摩点
     en: Modian
 cover:
-  en: /games/netherworld-candle/cover.jpg
-  zh: /games/netherworld-candle/cover.jpg
+  en: /games/netherworld-candle/catalogue-cover.jpg
+  zh: /games/netherworld-candle/catalogue-cover.jpg
 title:
-  zh: 冥烛
+  zh: 彼岸之烛
   en: Netherworld Candle
 tagline:
-  zh: 一盏引路的烛火，照进东方神话的古墓深处
-  en: A tomb-raiding adventure lit by one guttering candle
+  zh: 五年打磨，以原创故事与精致模型呈现中国传统文化中的古墓冒险
+  en: Five years in the making — a tomb adventure rooted in Chinese tradition, with an original story and detailed miniatures
 tags:
   zh: [原创, 剧情战役, 合作]
   en: [Original, Campaign, Co-op]
 ---
 
-烛火不灭，人便还在。
+《彼岸之烛》是向量桌游首款以中国传统文化为背景的大型原创桌游。团队历经五年开发，将原创故事、精致模型与古墓冒险融为一体，让玩家在桌面上走进一个充满未知的世界。
 
-《冥烛》是向量桌游的第一款原创作品——一场发生在东方神话土壤上的古墓冒险。四位身份各异的探墓人带着一盏来历不明的引路烛，走进一座本不该被打开的墓室。烛火既是照明，也是计时：它每一次摇曳，都在提醒你，墓里的东西已经醒了。
+### 故事与玩法
 
-### 核心机制
+故事发生在十九世纪末的中国，将历史事件、古老神话与超自然恐怖交织成一场合作战役冒险。玩家共同探索、破解谜题，在战术战斗中相互配合，并通过选择走向不同的叙事分支。
 
-- **八卦解谜**：墓室机关以八卦方位排布，玩家需要在有限回合内推演卦象、错位重排，才能打开下一道石门。
-- **命运骰（Destiny Dice）**：不是纯粹的运气。每次投掷的结果都会被记进「命簿」，后续可以被消耗、改写或反噬——你今天躲过的一劫，可能是明天要还的债。
-- **角色技能协同**：四名探墓人的技能只有在正确的时机串联时才会真正生效，鼓励桌边的即时商议，而不是各打各的。
+### 五年打磨的原创作品
 
-### 战役结构
+从故事创作到模型设计，再到生产与交付，《彼岸之烛》承载了向量桌游对大型原创项目的探索。我们希望游戏留下的不只是一次通关的结果，还有玩家在桌边共同经历的冒险。
 
-十三章可延续的战役，选择会跨章节留下痕迹：被你封死的墓道、被你唤醒的东西、被你抛下的同伴，都会在后面的章节里回来找你。单人模式使用同一套战役文本，无需额外规则手册。
+### 众筹与玩家支持
+
+项目于 2024 年在摩点开启众筹，获得 2,085 位玩家支持，募集人民币 1,995,595.50 元。截至 2025 年，项目位列中文原创桌游众筹金额第二名，发货后收获了众多玩家好评。
+
+### 原创认可
+
+2025 年，《彼岸之烛》获得 GOLDEN DICE 最佳原创奖。对团队而言，这份认可也是继续打磨原创作品、将中国故事带给更多玩家的动力。
+
+### 产品展示
+
+![彼岸之烛中文版产品展示](/games/netherworld-candle/catalogue-boxes.jpg)
 
 <!-- @en -->
 
-While the candle burns, you are still here.
+*Netherworld Candle* is Infinity Hex Games’ first large-scale original board game rooted in traditional Chinese culture. Developed over five years, it brings together an original story, detailed miniatures and tomb exploration in a world full of unknowns.
 
-*Netherworld Candle* is Infinity Hex Games' first original title — a tomb adventure grown from Eastern mythology. Four tomb-raiders of very different backgrounds carry a single guiding candle of unknown provenance into a burial chamber that was never meant to be opened. The candle is both your light and your clock: every flicker is a reminder that whatever sleeps down here has already woken up.
+### Story and gameplay
 
-### Core mechanics
+Set in late nineteenth-century China, the cooperative campaign weaves historical events, ancient mythology and supernatural horror into its adventure. Players explore together, solve puzzles and coordinate in tactical combat, making choices that lead through a branching narrative.
 
-- **Bagua puzzles** — chamber mechanisms are laid out along the eight trigrams. You have a limited number of rounds to read the arrangement and re-order it before the next stone door will open.
-- **Destiny Dice** — not pure luck. Every roll is written into the Book of Fate, where it can later be spent, rewritten, or turned against you. The disaster you dodge today is the debt you settle tomorrow.
-- **Character skill synergy** — the four raiders' abilities only truly fire when chained in the right order, which pushes the table towards real negotiation rather than four parallel solo turns.
+### Five years in the making
 
-### Campaign structure
+From writing and miniature design through production and fulfilment, *Netherworld Candle* represents the studio’s work on a large-scale original title. Our aim is to give players an adventure they will remember together long after the game is packed away.
 
-A thirteen-chapter continuing campaign in which choices leave marks across chapters: the passage you sealed, the thing you woke, the companion you left behind — all of them come looking for you later. Solo mode uses the same campaign text with no separate rulebook.
+### Crowdfunding and player support
+
+The game launched on Modian in 2024, raising CNY 1,995,595.50 from 2,085 backers. As of 2025, it ranked second among Chinese original board games by crowdfunding amount and had received positive feedback from players following delivery.
+
+### Recognition for original design
+
+In 2025, *Netherworld Candle* received the GOLDEN DICE award for Best Original Game. That recognition encourages us to keep developing original titles and bringing Chinese stories to more tables.
+
+### Product gallery
+
+![Netherworld Candle Chinese-edition product display](/games/netherworld-candle/catalogue-boxes.jpg)

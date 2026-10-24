@@ -11,7 +11,7 @@ const dict = {
     meta: {
       title: '向量桌游 Infinity Hex Games · 方寸之间，万象无穷',
       description:
-        '向量桌游（Infinity Hex Games）同时经营原创桌游开发与中文版发行：版权洽谈、母语级中文化、印制打样、众筹与渠道，一条产线做到底。',
+        '向量桌游（Infinity Hex Games）成立于 2017 年，专注原创桌游开发、简体中文版发行与海外推广，代表作品包括《彼岸之烛》，并引进《阿格莫尼亚》等国际桌游。',
     },
     a11y: {
       skip: '跳到主要内容',
@@ -62,7 +62,7 @@ const dict = {
     meta: {
       title: 'Infinity Hex Games · Unfold the Board. Unleash the Saga.',
       description:
-        'Infinity Hex Games runs two lines at once — original tabletop development and Chinese-language publishing: licensing, native-standard localisation, prototyping, crowdfunding and distribution, end to end.',
+        'Founded in 2017, Infinity Hex Games develops original board games, publishes Simplified Chinese editions and connects games with international audiences. Titles include Netherworld Candle and the Chinese edition of Agemonia.',
     },
     a11y: {
       skip: 'Skip to content',

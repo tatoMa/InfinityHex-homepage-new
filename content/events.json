@@ -1,0 +1,102 @@
+[
+  {
+    "id": "team-at-booth",
+    "src": "/events/team-at-booth.jpg",
+    "width": 1499,
+    "height": 998,
+    "caption": {
+      "zh": "展台前的团队合影",
+      "en": "A team photo at the booth"
+    }
+  },
+  {
+    "id": "demo-table",
+    "src": "/events/demo-table.jpg",
+    "width": 1600,
+    "height": 1200,
+    "caption": {
+      "zh": "桌边交流与游戏演示",
+      "en": "Conversation and game demos around the table"
+    }
+  },
+  {
+    "id": "booth-overview",
+    "src": "/events/booth-overview.jpg",
+    "width": 1490,
+    "height": 678,
+    "caption": {
+      "zh": "向量桌游展台现场",
+      "en": "The Infinity Hex Games booth"
+    }
+  },
+  {
+    "id": "visitors",
+    "src": "/events/visitors.jpg",
+    "width": 1200,
+    "height": 1600,
+    "caption": {
+      "zh": "与展会玩家面对面",
+      "en": "Meeting players at the convention"
+    }
+  },
+  {
+    "id": "game-presentation",
+    "src": "/events/game-presentation.jpg",
+    "width": 1484,
+    "height": 1113,
+    "caption": {
+      "zh": "现场介绍与试玩交流",
+      "en": "Introducing games and sharing a play session"
+    }
+  },
+  {
+    "id": "agemonia-presentation",
+    "src": "/events/agemonia-presentation.jpg",
+    "width": 1600,
+    "height": 1200,
+    "caption": {
+      "zh": "《阿格莫尼亚》展会交流",
+      "en": "Agemonia at the convention"
+    }
+  },
+  {
+    "id": "team-and-partners",
+    "src": "/events/team-and-partners.jpg",
+    "width": 1600,
+    "height": 1200,
+    "caption": {
+      "zh": "展会现场合影",
+      "en": "A group photo at the convention"
+    }
+  },
+  {
+    "id": "meeting-at-booth",
+    "src": "/events/meeting-at-booth.jpg",
+    "width": 1200,
+    "height": 1600,
+    "caption": {
+      "zh": "在展台相聚",
+      "en": "Meeting at the booth"
+    }
+  },
+  {
+    "id": "candle-introduction",
+    "src": "/events/candle-introduction.jpg",
+    "width": 1600,
+    "height": 1200,
+    "caption": {
+      "zh": "《彼岸之烛》展台介绍",
+      "en": "Introducing Netherworld Candle at the booth"
+    }
+  },
+  {
+    "id": "candle-play-session",
+    "src": "/events/candle-play-session.jpg",
+    "width": 1600,
+    "height": 1200,
+    "caption": {
+      "zh": "《彼岸之烛》现场试玩",
+      "en": "Playing Netherworld Candle at the event"
+    }
+  }
+]

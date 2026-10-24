@@ -1,80 +1,144 @@
 [
   {
     "id": "founded",
-    "year": "2024",
-    "quarter": { "zh": "春", "en": "Spring" },
-    "title": { "zh": "公司成立", "en": "Founded" },
-    "alt": { "zh": "三个人，一张桌子", "en": "Three people, one table" },
-    "body": {
-      "zh": "三个人、一张桌子、一柜子样品。第一条业务线定为简体中文版发行——先把别人的好游戏做对，再谈做自己的。",
-      "en": "Three people, one table and a cabinet of review copies. The first line on the board was Simplified Chinese publishing: get somebody else's good game right first, then earn the right to make our own."
+    "year": "2017",
+    "quarter": {
+      "zh": "起点",
+      "en": "Beginnings"
     },
-    "stats": [{ "label": { "zh": "创始团队", "en": "Founding team" }, "value": { "zh": "3 人", "en": "3 people" } }]
-  },
-  {
-    "id": "first-licence",
-    "year": "2024",
-    "quarter": { "zh": "秋", "en": "Autumn" },
-    "title": { "zh": "首个版权签约", "en": "First licence" },
-    "alt": { "zh": "《阿格莫尼亚》", "en": "Agemonia" },
-    "body": {
-      "zh": "与 Mighty Boards 达成《阿格莫尼亚》简体中文版协议。术语表在译者动笔之前就交回原出版方确认——这条规矩从第一个项目就立下了。",
-      "en": "Simplified Chinese rights to Agemonia agreed with Mighty Boards. The glossary went back to the original publisher for sign-off before a translator started — a rule set on the very first project."
+    "title": {
+      "zh": "从故事创作出发",
+      "en": "A beginning in storytelling"
     },
-    "stats": [{ "label": { "zh": "战役文本", "en": "Campaign text" }, "value": { "zh": "十余万字", "en": "100k+ characters" } }]
-  },
-  {
-    "id": "first-campaign",
-    "year": "2025",
-    "quarter": { "zh": "春", "en": "Spring" },
-    "title": { "zh": "首次众筹", "en": "First campaign" },
-    "alt": { "zh": "中文玩家社群成型", "en": "A community forms" },
+    "alt": {
+      "zh": "ANDY 与 YUEZHANG 共同创立",
+      "en": "Founded by ANDY and YUEZHANG"
+    },
     "body": {
-      "zh": "《阿格莫尼亚》简体中文版众筹完成，中文玩家社群围绕它稳定成型。数字由项目档案自动汇总，不用手改。",
-      "en": "The Agemonia Simplified Chinese edition funded, and a settled Chinese-language community formed around it. The figures below are summed from the project files, never typed in by hand."
+      "zh": "公司以“谋杀之谜”剧本创作与发行为起点，为超过一万名顾客提供相关服务。对故事与玩家体验的关注，也成为后来开发桌游的基础。",
+      "en": "Founded by ANDY and YUEZHANG, the company began by creating and publishing murder mystery scenarios, serving more than 10,000 customers. That focus on storytelling and player experience laid the groundwork for its board games."
     },
     "stats": [
-      { "game": "agemonia", "field": "raised" },
-      { "game": "agemonia", "field": "backers" }
+      {
+        "label": {
+          "zh": "早期服务顾客",
+          "en": "Early customers served"
+        },
+        "value": {
+          "zh": "10,000+",
+          "en": "10,000+"
+        }
+      }
     ]
   },
   {
-    "id": "goes-original",
-    "year": "2025",
-    "quarter": { "zh": "夏", "en": "Summer" },
-    "title": { "zh": "原创立项", "en": "Studio goes original" },
-    "alt": { "zh": "《冥烛》", "en": "Netherworld Candle" },
-    "body": {
-      "zh": "《冥烛》进入开发——东方神话盗墓题材，八卦解谜与命运骰系统，十三章战役。机制、叙事、配件工程全部在内部完成。",
-      "en": "Netherworld Candle enters development — an Eastern-mythology tomb adventure built on Bagua puzzles and the Destiny Dice system, across thirteen chapters. Mechanics, narrative and component engineering all in-house."
+    "id": "board-game-design",
+    "year": "2019",
+    "quarter": {
+      "zh": "转型",
+      "en": "New direction"
     },
-    "stats": [{ "label": { "zh": "战役章节", "en": "Chapters" }, "value": { "zh": "13 章", "en": "13" } }]
+    "title": {
+      "zh": "专注原创桌游",
+      "en": "A focus on original board games"
+    },
+    "alt": {
+      "zh": "从剧本走向桌面",
+      "en": "From scripts to the tabletop"
+    },
+    "body": {
+      "zh": "品牌转型为专注桌游设计的原创公司，将叙事创作经验带入游戏开发，探索故事、机制与桌面互动的结合。",
+      "en": "The company shifted its focus to original board game design, bringing its experience in storytelling to the interplay of narrative, mechanics and tabletop interaction."
+    }
   },
   {
-    "id": "first-original-ships",
-    "year": "2025",
-    "quarter": { "zh": "冬", "en": "Winter" },
-    "title": { "zh": "原创首发", "en": "First original ships" },
-    "alt": { "zh": "解锁目标全部兑现", "en": "Every stretch goal delivered" },
+    "id": "netherworld-launch",
+    "year": "2024",
+    "quarter": {
+      "zh": "众筹",
+      "en": "Crowdfunding"
+    },
+    "title": {
+      "zh": "《彼岸之烛》亮相",
+      "en": "Netherworld Candle launches"
+    },
+    "alt": {
+      "zh": "五年打磨，中国故事上桌",
+      "en": "Five years of development"
+    },
     "body": {
-      "zh": "《冥烛》众筹结束，解锁目标全部按期兑现并发货。交付日期一经公布没有改动过一次。",
-      "en": "Netherworld Candle closed its campaign, unlocked every stretch goal and shipped them all on schedule. The published fulfilment date never moved."
+      "zh": "历经五年开发，《彼岸之烛》登陆摩点，以中国传统文化为背景，融合原创故事与精致模型。截至 2025 年，项目位列中文原创桌游众筹金额第二名。",
+      "en": "After five years in development, Netherworld Candle launched on Modian, combining an original story rooted in traditional Chinese culture with detailed miniatures. As of 2025, it ranked second among Chinese original board games by crowdfunding amount."
     },
     "stats": [
-      { "game": "netherworld-candle", "field": "raised" },
-      { "game": "netherworld-candle", "field": "stretch" }
+      {
+        "game": "netherworld-candle",
+        "field": "raised"
+      },
+      {
+        "game": "netherworld-candle",
+        "field": "backers"
+      }
     ]
   },
   {
-    "id": "both-lines",
+    "id": "original-recognition",
+    "year": "2025",
+    "quarter": {
+      "zh": "认可",
+      "en": "Recognition"
+    },
+    "title": {
+      "zh": "原创作品获得认可",
+      "en": "Recognition for original design"
+    },
+    "alt": {
+      "zh": "GOLDEN DICE 最佳原创奖",
+      "en": "GOLDEN DICE · Best Original Game"
+    },
+    "body": {
+      "zh": "《彼岸之烛》发货后收获众多玩家好评，并于 2025 年获得 GOLDEN DICE 最佳原创奖。这份认可鼓励团队继续投入原创开发。",
+      "en": "Following delivery and positive feedback from players, Netherworld Candle received the GOLDEN DICE award for Best Original Game in 2025, encouraging the team to continue investing in original development."
+    }
+  },
+  {
+    "id": "localisation",
+    "year": "2025",
+    "quarter": {
+      "zh": "至今",
+      "en": "Onward"
+    },
+    "title": {
+      "zh": "拓展国际游戏本地化",
+      "en": "Expanding Chinese-language publishing"
+    },
+    "alt": {
+      "zh": "让更多好游戏走近中文玩家",
+      "en": "Bringing more games to Chinese-speaking players"
+    },
+    "body": {
+      "zh": "持续引入《阿格莫尼亚》《空寂之钟》《幽影迷航》《SHEOL》等项目，发展国际游戏本地化代理业务。依托积累的客户资源与玩家社群，推进中文市场发行。",
+      "en": "The company expanded its localisation and publishing work with titles including Agemonia and SHEOL. Established customer relationships and player communities support the continued growth of its Chinese-language catalogue."
+    }
+  },
+  {
+    "id": "next-chapter",
     "year": "2026",
-    "quarter": { "zh": "起", "en": "Onward" },
-    "title": { "zh": "两条产线并行", "en": "Both lines running" },
-    "alt": { "zh": "并且开始向外走", "en": "And outward" },
-    "body": {
-      "zh": "原创开发与简体中文版发行同时推进，团队扩到八人，并开始把中国原创作品带向海外发行商。",
-      "en": "Original development and licensed editions now run in parallel, the team is eight, and we have begun taking Chinese originals out to publishers abroad."
+    "quarter": {
+      "zh": "向前",
+      "en": "Looking ahead"
     },
-    "stats": [{ "label": { "zh": "团队规模", "en": "Team" }, "value": { "zh": "8 人", "en": "8 people" } }]
+    "title": {
+      "zh": "让中国原创走向世界",
+      "en": "Taking Chinese originals abroad"
+    },
+    "alt": {
+      "zh": "原创开发 · 代理引进 · 海外推广",
+      "en": "Originals · Chinese editions · International outreach"
+    },
+    "body": {
+      "zh": "围绕原创开发、代理引进与海外推广，持续完善生产质控、物流仓储和交付售后体系。在深耕国内市场的同时，推动优质中国原创桌游走向国际。",
+      "en": "Original development, Chinese-language publishing and international outreach guide our next chapter. Alongside our work in China, we are strengthening production quality, logistics and after-sales support to bring Chinese original games to more tables worldwide."
+    }
   }
 ]

@@ -7,6 +7,7 @@ import { getTeam } from '@/lib/team'
 import { getTotals } from '@/lib/games'
 import { isLocale, locales, type Locale } from '@/i18n/config'
 import { getDict, SOCIAL } from '@/i18n/dict'
+import eventPhotos from '../../../../content/events.json'
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }))
@@ -113,8 +114,13 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                   <div className="tface">
                     {m.photo ? (
                       /* eslint-disable-next-line @next/next/no-img-element */
-                      <img src={m.photo} alt="" loading={i < 4 ? 'eager' : 'lazy'} decoding="async" />
-                    ) : null}
+                      <img src={m.photo} alt={m.name[l]} loading={i < 4 ? 'eager' : 'lazy'} decoding="async" />
+                    ) : (
+                      <div className="tface-placeholder">
+                        <span aria-hidden="true">{m.name[l].slice(0, 1)}</span>
+                        <small>{t.about.portraitPending}</small>
+                      </div>
+                    )}
                   </div>
                   <div className="tbody">
                     <h3>
@@ -144,6 +150,33 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                   </div>
                 </article>
               </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="sec about-events" aria-labelledby="eventsTitle">
+        <div className="wrap">
+          <div className="sec-head">
+            <Reveal>
+              <h2 className="sec-title" id="eventsTitle">
+                {t.about.galleryTitle}
+                <span className="alt">{t.about.gallerySubtitle}</span>
+              </h2>
+            </Reveal>
+            <Reveal as="p">{t.about.galleryLead}</Reveal>
+          </div>
+          <div className="event-gallery">
+            {eventPhotos.map((photo) => (
+              <figure className="event-photo" key={photo.id}>
+                <a href={photo.src} target="_blank" rel="noopener noreferrer"
+                  aria-label={`${t.about.galleryOpen}: ${photo.caption[l]}`}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={photo.src} alt={photo.caption[l]} width={photo.width}
+                    height={photo.height} loading="lazy" decoding="async" />
+                </a>
+                <figcaption>{photo.caption[l]}</figcaption>
+              </figure>
             ))}
           </div>
         </div>
