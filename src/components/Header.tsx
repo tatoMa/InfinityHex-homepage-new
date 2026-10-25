@@ -51,7 +51,6 @@ export default function Header({
     { href: a('#games'), label: t.nav.games },
     { href: a('#services'), label: t.nav.services },
     { href: a('#history'), label: t.nav.history },
-    { href: a('#voices'), label: t.nav.voices },
     { href: a('#partners'), label: t.nav.partners },
     { href: `${home}/about`, label: t.nav.about },
   ]

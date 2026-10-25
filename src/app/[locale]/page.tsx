@@ -5,7 +5,6 @@ import GameGrid from '@/components/sections/GameGrid'
 import Partners, { type Partner } from '@/components/sections/Partners'
 import Process from '@/components/sections/Process'
 import History from '@/components/sections/History'
-import Voices, { type Voice } from '@/components/sections/Voices'
 import HexWipe from '@/components/sections/HexWipe'
 import DiceRail from '@/components/sections/DiceRail'
 import { Contact, Services, Story } from '@/components/sections/Blocks'
@@ -17,7 +16,6 @@ import { placeholderCover } from '@/lib/cover'
 import { isLocale, type Locale } from '@/i18n/config'
 import { getDict } from '@/i18n/dict'
 import partnersData from '../../../content/partners.json'
-import voicesData from '../../../content/testimonials.json'
 
 const PAPER = '#F8F3E9'
 const PAPER_HI = '#FDFAF3'
@@ -74,7 +72,6 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   }))
 
   // placeholder art is swapped by dropping a file in, not by editing JSON
-  const voices = (voicesData as Voice[]).map((v) => ({ ...v, photo: resolveAsset(v.photo) }))
   const partners = (partnersData as Partner[]).map((p) => ({ ...p, logo: resolveAsset(p.logo) }))
 
   return (
@@ -88,12 +85,11 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           'process',
           'services',
           'history',
-          'voices',
           'partners',
           'story',
           'contact',
         ]}
-        total={10}
+        total={9}
       />
 
       <Hero t={t} locale={l} items={fanItems} stats={heroStats} titles={totals.titles} campaigns={totals.campaigns} />
@@ -125,11 +121,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
 
       <History t={t} locale={l} items={milestones} />
 
-      <HexWipe from={INK} to={PAPER} dir="center" rod="#D9A441" piece="card" />
-
-      <Voices t={t} locale={l} items={voices} />
-
-      <HexWipe from={PAPER} to={PAPER_HI} dir="ltr" piece="coin" />
+      <HexWipe from={INK} to={PAPER_HI} dir="center" rod="#D9A441" piece="card" />
 
       <div className="tint">
         <Partners

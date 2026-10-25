@@ -101,9 +101,6 @@ export default function Footer({
                 <Link href={`/${locale}#history`}>{t.nav.history}</Link>
               </li>
               <li>
-                <Link href={`/${locale}#voices`}>{t.nav.voices}</Link>
-              </li>
-              <li>
                 <Link href={`/${locale}#partners`}>{t.nav.partners}</Link>
               </li>
               <li>

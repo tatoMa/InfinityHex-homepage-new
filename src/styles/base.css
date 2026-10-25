@@ -393,7 +393,7 @@ body.no-mo .dicerail{ display:none; }
 
 /* A white or single-colour logo would disappear against the paper header —
    BRAND.logoPlate seats it on the cinnabar hexagon instead. */
-.brand-mark{ object-fit:contain; }
+.brand-mark{ display:block; object-fit:contain; object-position:center; }
 .brand-mark.plated{
   background:linear-gradient(135deg,var(--cinnabar-l),var(--cinnabar-d));
   clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);

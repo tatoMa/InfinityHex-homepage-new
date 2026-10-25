@@ -7,7 +7,6 @@ import CookieConsent from '@/components/CookieConsent'
 import { getAllGames } from '@/lib/games'
 import { isLocale, locales, type Locale } from '@/i18n/config'
 import { getDict } from '@/i18n/dict'
-import { resolveAsset } from '@/lib/asset'
 
 import '@/styles/base.css'
 import '@/styles/hero.css'
@@ -52,10 +51,8 @@ export default async function LocaleLayout({
   const l = locale as Locale
   const t = getDict(l)
   const games = await getAllGames()
-  // Resolved once, on the server, in whatever format was supplied — the
-  // browser never requests a logo that is not there, so an un-branded
-  // checkout has no 404s in its network panel.
-  const logo = resolveAsset('/logo')
+  // Use the supplied PNG explicitly, even when other logo formats exist.
+  const logo = '/logo.png'
 
   return (
     <html lang={l === 'zh' ? 'zh-CN' : 'en'} data-scroll-behavior="smooth">

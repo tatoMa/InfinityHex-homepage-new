@@ -4,23 +4,8 @@ import { useEffect, useRef, useState } from 'react'
 import { BRAND } from '@/brand'
 import { HEX_INNER, HEX_OUTER, INFINITY } from './mark'
 
-/**
- * Brand mark.
- *
- * Drop the real logo into `public/` as `logo.png` — or `.svg`, `.webp`,
- * `.jpg`; the extension does not matter, see src/lib/asset.ts — and it
- * appears here. With no file present the inline hex/infinity mark is drawn
- * instead.
- *
- * `src` is resolved on the SERVER (src/app/[locale]/layout.tsx), so the
- * browser never requests a logo that is not there: an un-branded checkout has
- * no 404 in its network panel.
- *
- * If the supplied logo is white or a single light colour it would disappear
- * against the paper background — set `BRAND.logoPlate = true` in
- * src/brand.ts to seat it on the cinnabar hexagon instead.
- */
-export default function Logo({ size = 40, src }: { size?: number; src?: string }) {
+/** Brand mark uses public/logo.png, with an inline fallback on load failure. */
+export default function Logo({ size = 40, src = "/logo.png" }: { size?: number; src?: string }) {
   const [failed, setFailed] = useState(!src)
   const imgRef = useRef<HTMLImageElement>(null)
 
