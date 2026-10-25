@@ -82,108 +82,109 @@ export default function Voices({
   const cur = items[i]
 
   return (
-    <section className="sec voices" id="voices" ref={secRef} aria-labelledby="voicesTitle">
-      <div className="sec-bg" aria-hidden="true">
-        <Parallax className="sbg wash-c" y={-110} scale={0.14} />
-        <Parallax className="sbg wash-a" y={90} scale={0.1} />
-      </div>
+<></>
+    // <section className="sec voices" id="voices" ref={secRef} aria-labelledby="voicesTitle">
+    //   <div className="sec-bg" aria-hidden="true">
+    //     <Parallax className="sbg wash-c" y={-110} scale={0.14} />
+    //     <Parallax className="sbg wash-a" y={90} scale={0.1} />
+    //   </div>
 
-      <div className="wrap">
-        <div className="sec-head">
-          <div>
-            <Reveal as="p" className="eyebrow">
-              <span className="hx" />
-              {t.voices.eyebrow}
-            </Reveal>
-            <Reveal as="h2" d={1} className="sec-title" id="voicesTitle">
-              {t.voices.title}
-              <span className="alt">{t.voices.titleEn}</span>
-            </Reveal>
-          </div>
-          <Reveal as="p" d={2}>
-            {t.voices.lead}
-          </Reveal>
-        </div>
+    //   <div className="wrap">
+    //     <div className="sec-head">
+    //       <div>
+    //         <Reveal as="p" className="eyebrow">
+    //           <span className="hx" />
+    //           {t.voices.eyebrow}
+    //         </Reveal>
+    //         <Reveal as="h2" d={1} className="sec-title" id="voicesTitle">
+    //           {t.voices.title}
+    //           <span className="alt">{t.voices.titleEn}</span>
+    //         </Reveal>
+    //       </div>
+    //       <Reveal as="p" d={2}>
+    //         {t.voices.lead}
+    //       </Reveal>
+    //     </div>
 
-        <Reveal>
-          <div
-            className="voices-stage"
-            onMouseEnter={() => setHeld(true)}
-            onMouseLeave={() => setHeld(false)}
-            onFocusCapture={() => setHeld(true)}
-            onBlurCapture={() => setHeld(false)}
-          >
-            <div className="voice-quotes">
-              {items.map((v, n) => (
-                <figure
-                  key={v.id}
-                  className={`voice${n === i ? ' on' : ''}`}
-                  style={{ ['--vc' as string]: v.color ?? 'var(--cinnabar)' }}
-                  aria-hidden={n === i ? undefined : true}
-                  {...(n === i ? {} : { inert: true as unknown as boolean })}
-                >
-                  <span className="voice-mark" aria-hidden="true">
-                    <svg viewBox="0 0 100 100" fill="currentColor">
-                      <path d="M50 6 92 30v48L50 102 8 78V30z" opacity=".14" />
-                      <path d="M36 40h12l-6 18h8v18H32V58zm22 0h12l-6 18h8v18H54V58z" />
-                    </svg>
-                  </span>
-                  <blockquote>{v.quote[locale]}</blockquote>
-                  <figcaption>
-                    {v.photo ? (
-                      /* eslint-disable-next-line @next/next/no-img-element */
-                      <img className="voice-face" src={v.photo} alt="" loading="lazy" decoding="async" />
-                    ) : null}
-                    <span className="voice-who">
-                      <b>{v.name[locale]}</b>
-                      <span>
-                        {v.role[locale]} · {v.org[locale]}
-                      </span>
-                    </span>
-                    <span className="voice-tags">
-                      {v.project ? <span className="voice-chip">{v.project[locale]}</span> : null}
-                      {v.sample ? <span className="ph-chip">{t.voices.sample}</span> : null}
-                    </span>
-                  </figcaption>
-                </figure>
-              ))}
-            </div>
+    //     <Reveal>
+    //       <div
+    //         className="voices-stage"
+    //         onMouseEnter={() => setHeld(true)}
+    //         onMouseLeave={() => setHeld(false)}
+    //         onFocusCapture={() => setHeld(true)}
+    //         onBlurCapture={() => setHeld(false)}
+    //       >
+    //         <div className="voice-quotes">
+    //           {items.map((v, n) => (
+    //             <figure
+    //               key={v.id}
+    //               className={`voice${n === i ? ' on' : ''}`}
+    //               style={{ ['--vc' as string]: v.color ?? 'var(--cinnabar)' }}
+    //               aria-hidden={n === i ? undefined : true}
+    //               {...(n === i ? {} : { inert: true as unknown as boolean })}
+    //             >
+    //               <span className="voice-mark" aria-hidden="true">
+    //                 <svg viewBox="0 0 100 100" fill="currentColor">
+    //                   <path d="M50 6 92 30v48L50 102 8 78V30z" opacity=".14" />
+    //                   <path d="M36 40h12l-6 18h8v18H32V58zm22 0h12l-6 18h8v18H54V58z" />
+    //                 </svg>
+    //               </span>
+    //               <blockquote>{v.quote[locale]}</blockquote>
+    //               <figcaption>
+    //                 {v.photo ? (
+    //                   /* eslint-disable-next-line @next/next/no-img-element */
+    //                   <img className="voice-face" src={v.photo} alt="" loading="lazy" decoding="async" />
+    //                 ) : null}
+    //                 <span className="voice-who">
+    //                   <b>{v.name[locale]}</b>
+    //                   <span>
+    //                     {v.role[locale]} · {v.org[locale]}
+    //                   </span>
+    //                 </span>
+    //                 <span className="voice-tags">
+    //                   {v.project ? <span className="voice-chip">{v.project[locale]}</span> : null}
+    //                   {v.sample ? <span className="ph-chip">{t.voices.sample}</span> : null}
+    //                 </span>
+    //               </figcaption>
+    //             </figure>
+    //           ))}
+    //         </div>
 
-            <div className="voice-bar" aria-hidden="true">
-              <b ref={barRef} />
-            </div>
+    //         <div className="voice-bar" aria-hidden="true">
+    //           <b ref={barRef} />
+    //         </div>
 
-            <ol className="voice-picks" role="tablist" aria-label={t.voices.title}>
-              {items.map((v, n) => (
-                <li key={v.id}>
-                  <button
-                    type="button"
-                    role="tab"
-                    aria-selected={n === i}
-                    className={n === i ? 'on' : ''}
-                    style={{ ['--vc' as string]: v.color ?? 'var(--cinnabar)' }}
-                    onClick={() => pick(n)}
-                  >
-                    {v.photo ? (
-                      /* eslint-disable-next-line @next/next/no-img-element */
-                      <img src={v.photo} alt="" loading="lazy" decoding="async" />
-                    ) : null}
-                    <span className="vh">
-                      {v.name[locale]} — {v.org[locale]}
-                    </span>
-                  </button>
-                </li>
-              ))}
-            </ol>
-          </div>
-        </Reveal>
+    //         <ol className="voice-picks" role="tablist" aria-label={t.voices.title}>
+    //           {items.map((v, n) => (
+    //             <li key={v.id}>
+    //               <button
+    //                 type="button"
+    //                 role="tab"
+    //                 aria-selected={n === i}
+    //                 className={n === i ? 'on' : ''}
+    //                 style={{ ['--vc' as string]: v.color ?? 'var(--cinnabar)' }}
+    //                 onClick={() => pick(n)}
+    //               >
+    //                 {v.photo ? (
+    //                   /* eslint-disable-next-line @next/next/no-img-element */
+    //                   <img src={v.photo} alt="" loading="lazy" decoding="async" />
+    //                 ) : null}
+    //                 <span className="vh">
+    //                   {v.name[locale]} — {v.org[locale]}
+    //                 </span>
+    //               </button>
+    //             </li>
+    //           ))}
+    //         </ol>
+    //       </div>
+    //     </Reveal>
 
-        <Reveal style={{ textAlign: 'center', marginTop: 30 }}>
-          <a className="btn btn-g" href="#contact">
-            <span>{t.voices.cta}</span>
-          </a>
-        </Reveal>
-      </div>
-    </section>
+    //     <Reveal style={{ textAlign: 'center', marginTop: 30 }}>
+    //       <a className="btn btn-g" href="#contact">
+    //         <span>{t.voices.cta}</span>
+    //       </a>
+    //     </Reveal>
+    //   </div>
+    // </section>
   )
 }
